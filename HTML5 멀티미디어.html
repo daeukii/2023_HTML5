@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML 멀티미디어</h1>
+    <h2>video</h2>
+    <video src="./image/KakaoTalk_20230213_164409623.mp4"
+    style="width:576px; height:360px" controls autoplay muted loop></video>
+    <p style="background-color: chartreuse; width: 300px;">
+        controls : 플레이버튼과 남은시간,소리표시<br>
+        autoplay : 자동실행 (단, muted상태일때) <br>
+        muted : 무음 <br>
+        loop : 계속 반복 <br>
+    </p>
+    <h2>플러그인</h2>
+    <h3>object</h3>
+    <object data="./data/3일차 HTML5.pdf" type=""></object>
+    <object data="./image/바다.jpg" type="" width="300px"></object>
+    <p style="background-color: darkkhaki;">
+    object 태그는 다양한 파일들을 화면에 출력하는 태그</p>
+
+    <h1>embed</h1>
+    <embed src="./data/3일차 HTML5.pdf" type="">
+    <embed src="./image/캡처.PNG" type="">
+    <p> embed object와 동일하게 사용할 수 있다</p>
+
+    <h3>유튜브 영상 들고오기</h3>
+    <iframe width="560" height="315"
+    src="https://www.youtube.com/embed/YpCnqoXZpMU?mute=1&autoplay=1" 
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; 
+    encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen></iframe>
+    <p style="background-color: deepskyblue;">소스코드로 복사해오면 ifram안에 설정이 되어서 들고올수 있다</p>
+    <p style="background-color: deepskyblue;">video의 설정을 유튜브에서도 적용할수 있다 <br>
+    url뒤에 ?를 이용한 쿼리문으로 작성할수 있다 <br>
+    ?mute=1&autoplay=1 같은 값으로 들어간다 <br>
+    1은 true 참이라는 값으로 사용,
+    0은 false 거짓이라는 값으로 사용    
+    </p>
+    <hr>
+    <table>
+        <h1>현재 인기있는 영상</h1>
+        <tr>
+            <td><iframe width="320" height="180" src="https://www.youtube.com/embed/YpCnqoXZpMU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+            <td><iframe width="320" height="180" src="https://www.youtube.com/embed/YpCnqoXZpMU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+            <td><iframe width="320" height="180" src="https://www.youtube.com/embed/YpCnqoXZpMU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+            <td><iframe width="320" height="180" src="https://www.youtube.com/embed/YpCnqoXZpMU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></td>
+        </tr>
+        <tr>
+            <td>1위</td>
+            <td>2위</td>
+            <td>3위</td>
+            <td>4위</td>
+        </tr>
+    </table>
+</body>
+</html>
